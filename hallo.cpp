@@ -5,9 +5,13 @@ int main(){
     char nama[5][20];
     int i;
 
-    for(i=0;i<4;i++){
-        cout<<"Masukkan data "<<i+1 <<"=";
+    for(i=0;i<5;i++){
+        cout<<"Masukkan nama "<<i+1 <<"=";
         cin>>nama[i];
+    }
+
+    for(i=0;i<5;i++){
+        cout<<endl<<"Nama "<<i+1 <<"= "<<nama[i];
     }
     return 0;
 }
