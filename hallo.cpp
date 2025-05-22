@@ -3,15 +3,16 @@ using namespace std;
 
 int main(){
     char nama[5][20];
-    int i;
+    int i, banyakNama;
 
-    for(i=0;i<5;i++){
-        cout<<"Masukkan nama "<<i+1 <<"=";
+    cout<<"Berapa nama ingin diinput = ";cin>>banyakNama;
+    for(i=0;i<banyakNama;i++){
+        cout<<"Masukkan nama "<<i+1 <<" = ";
         cin>>nama[i];
     }
 
-    for(i=0;i<5;i++){
-        cout<<endl<<"Nama "<<i+1 <<"= "<<nama[i];
+    for(i=0;i<banyakNama;i++){
+        cout<<endl<<"Nama "<<i+1 <<" = "<<nama[i];
     }
     return 0;
 }
